@@ -1,0 +1,29 @@
+---
+title: "web.xml settings"
+date: 2019-07-31 09:17:00 -0400
+categories: spring framework
+---
+
+​```
+<servlet>
+  <servlet-name>매핑에 사용할 servlet명(별칭)</servlet-name>
+  <servlet-class>클래스명</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>위에서 정한 별칭</servlet-name>
+  <url-pattern>servlet에 접근할 경로</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>welcome</servlet-name>
+  <servlet-class>servlets.WelcomeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>welcome</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+​```
+
